@@ -1,0 +1,2 @@
+Main-Class: jp.ac.kyoto_su.ise.compressor.Main
+Class-Path: args4j-2.33.jar annotations-19.0.0.jar commons-compress-1.20.jar
