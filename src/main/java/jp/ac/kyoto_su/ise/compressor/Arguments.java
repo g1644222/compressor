@@ -30,6 +30,10 @@ public class Arguments {
         return deleteFlag;
     }
 
+    public boolean versioninformation() {
+        return versionFlag;
+    }
+
     public Stream<String> stream() {
         return arguments.stream();
     }
@@ -40,12 +44,19 @@ public class Arguments {
 
     public static Arguments parse(String[] args) throws CmdLineException {
         Arguments arguments = new Arguments();
-        CmdLineParser parser = new CmdLineParser(arguments);
+        CmdLineParser parser = new CmdLineParser(arguments);  //パースを読み込むためのクラス
         parser.parseArgument(args);
         return arguments;
     }
 
     public static final String helpMessage() {
+
+      // ヘルプメッセージ
+      // -cは圧縮アルゴリズムの指定、デフォルトは「gzip」。他に「bzip2」が使用可能
+      // -dは圧縮元のファイルを削除
+      // -vは現在のシステムのバージョンを表示
+      // -hはこのメッセージを出力
+
         return String.format("java -jar compressor.jar [OPTIONS] <FILES...>%n" +
                 "OPTIONS%n" +
                 "    -c, --compress <ALGORITHM>    specifies compress algorithm. Default is \"gzip\".%n" +

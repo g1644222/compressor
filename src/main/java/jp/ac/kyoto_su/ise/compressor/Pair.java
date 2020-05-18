@@ -2,7 +2,7 @@ package jp.ac.kyoto_su.ise.compressor;
 
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
-
+// 関数の入力と出力を扱うクラス(以下の4つ)
 import java.util.function.BiConsumer;
 import java.util.function.BiFunction;
 import java.util.function.BiPredicate;

@@ -24,3 +24,6 @@ OPTIONS
     -v, --version                 print version.
     -h, --help                    print this message.
 ```
+
+<!-- ## アップデート予定
+バージョン表示の実装 -->

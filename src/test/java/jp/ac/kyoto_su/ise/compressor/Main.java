@@ -20,7 +20,7 @@ public class Main {
 
     public void perform(Arguments args) throws NoCompressorException {
         Compressor compressor = args.compressor();
-        args.stream().map(file -> Pair.of(file, compressor.renameFile(file)))
+        args.stream().map(file -> Pair.of(file, compressor.renameFile(file)))  //mapに指定された形式にしたストリームを返す
                 .forEach(pair -> performEach(compressor, pair));
         if(args.deleteOriginal()) {
             args.stream()
