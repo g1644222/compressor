@@ -7,4 +7,5 @@ branches:
   only:
   - test
 
+
 script: "mvn install"
