@@ -1,11 +1,11 @@
 language: java
 jdk:
-    - oraclejdk8
+    - openjdk8
 
-mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
-./mvnw install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+# safelist
+branches:
+  only:
+  - test
 
-mvn test -B
-./mvnw test -B
 
-
+script: "mvn install"
