@@ -1,7 +1,6 @@
 ![Hex.pm](https://img.shields.io/hexpm/l/Apa)
 [![Build Status](https://travis-ci.com/g1644222/compressor.svg?token=xdZ1c89i5sEL5QfrybCz&branch=master)](https://travis-ci.com/g1644222/compressor)
 
-
 # compressor
 エンピリカルソフトウェア工学のソースコード  
 引数で与えられたファイルをgzip(bzip2)圧縮を行うプログラム  
