@@ -22,31 +22,36 @@ import org.evosuite.runtime.EvoRunner;
 import org.evosuite.runtime.EvoRunnerParameters;
 import org.junit.runner.RunWith;
 
-@RunWith(EvoRunner.class) @EvoRunnerParameters(mockJVMNonDeterminism = true, useVFS = true, useVNET = true, resetStaticState = true, separateClassLoader = true, useJEE = true) 
+
+@RunWith(EvoRunner.class) @EvoRunnerParameters(mockJVMNonDeterminism = true, useVFS = true, useVNET = true, resetStaticState = true, separateClassLoader = true, useJEE = true)
 public class Main_ESTest extends Main_ESTest_scaffolding {
 
-  @Test(timeout = 4000)
-  public void test00()  throws Throwable  {
-      String[] stringArray0 = new String[0];
-      Main main0 = new Main(stringArray0);
-      Arguments arguments0 = Arguments.parse(stringArray0);
-      Compressor compressor0 = arguments0.compressor();
-      Pair<String, String> pair0 = Pair.of("LvesdQxB", "");
-      main0.performEach(compressor0, pair0);
-  }
+  // @Test(timeout = 4000)
+  // public void test00()  throws Throwable  {
+  //     String[] stringArray0 = new String[0];
+  //     Main main0 = new Main(stringArray0);
+  //     Arguments arguments0 = Arguments.parse(stringArray0);
+  //     Compressor compressor0 = arguments0.compressor();
+  //     Pair<String, String> pair0 = Pair.of("LvesdQxB", "");
+  //     main0.performEach(compressor0, pair0);
+  // }
+
 
   @Test(timeout = 4000)
   public void test01()  throws Throwable  {
       String[] stringArray0 = new String[2];
-      stringArray0[0] = "3 a3}";
-      stringArray0[1] = "GJ @k+$sf5!=22(NGu'";
+
+      stringArray0[0] = "-c";
+      stringArray0[1] = "bzip2";
+      // stringArray0[0] = "3 a3}";
+      // stringArray0[1] = "GJ @k+$sf5!=22(NGu'";
       Main main0 = new Main(stringArray0);
       BZip2Compressor bZip2Compressor0 = new BZip2Compressor();
       // Undeclared exception!
-      try { 
+      try {
         main0.performEach(bZip2Compressor0, (Pair<String, String>) null);
         fail("Expecting exception: NullPointerException");
-      
+
       } catch(NullPointerException e) {
          //
          // no message in exception (getMessage() returned null)
@@ -58,16 +63,19 @@ public class Main_ESTest extends Main_ESTest_scaffolding {
   @Test(timeout = 4000)
   public void test02()  throws Throwable  {
       String[] stringArray0 = new String[1];
-      stringArray0[0] = "j";
+
+      stringArray0[0] = "-v";
+
       Main main0 = new Main(stringArray0);
       GzipCompressor gzipCompressor0 = new GzipCompressor();
       Pair<String, String> pair0 = Pair.of((String) null, "");
       Pair<String, String> pair1 = pair0.swap();
       // Undeclared exception!
-      try { 
+
+      try {
         main0.performEach(gzipCompressor0, pair1);
         fail("Expecting exception: NullPointerException");
-      
+
       } catch(NullPointerException e) {
       }
   }
@@ -84,10 +92,11 @@ public class Main_ESTest extends Main_ESTest_scaffolding {
       stringArray0[6] = "`*hxU 5+Jz";
       stringArray0[7] = "";
       stringArray0[8] = "@{|2gH:BM3~>'f>(:(";
-      try { 
+
+      try {
         Main.main(stringArray0);
         fail("Expecting exception: Exception");
-      
+
       } catch(Exception e) {
          //
          // No such file: {|2gH:BM3~>'f>(:(
@@ -98,10 +107,11 @@ public class Main_ESTest extends Main_ESTest_scaffolding {
 
   @Test(timeout = 4000)
   public void test04()  throws Throwable  {
-      try { 
+
+      try {
         Main.main((String[]) null);
         fail("Expecting exception: NullPointerException");
-      
+
       } catch(NullPointerException e) {
          //
          // args is null
@@ -122,7 +132,6 @@ public class Main_ESTest extends Main_ESTest_scaffolding {
       try {
         main0 = new Main(stringArray0);
         fail("Expecting exception: Exception");
-      
       } catch(Throwable e) {
          //
          // \"-O\" is not a valid option
@@ -137,7 +146,7 @@ public class Main_ESTest extends Main_ESTest_scaffolding {
       try {
         main0 = new Main((String[]) null);
         fail("Expecting exception: NullPointerException");
-      
+
       } catch(NullPointerException e) {
          //
          // args is null
@@ -149,7 +158,9 @@ public class Main_ESTest extends Main_ESTest_scaffolding {
   @Test(timeout = 4000)
   public void test07()  throws Throwable  {
       String[] stringArray0 = new String[1];
-      stringArray0[0] = "j";
+
+      stringArray0[0] = "-d";
+
       Main main0 = new Main(stringArray0);
       Arguments arguments0 = new Arguments();
       main0.perform(arguments0);
@@ -161,10 +172,11 @@ public class Main_ESTest extends Main_ESTest_scaffolding {
       String[] stringArray0 = new String[0];
       Main main0 = new Main(stringArray0);
       // Undeclared exception!
-      try { 
+
+      try {
         main0.perform((Arguments) null);
         fail("Expecting exception: NullPointerException");
-      
+
       } catch(NullPointerException e) {
          //
          // no message in exception (getMessage() returned null)
@@ -175,20 +187,23 @@ public class Main_ESTest extends Main_ESTest_scaffolding {
 
   @Test(timeout = 4000)
   public void test09()  throws Throwable  {
-    Future<?> future = executor.submit(new Runnable(){ 
-            @Override public void run() { 
+
+    Future<?> future = executor.submit(new Runnable(){
+            @Override public void run() {
         try {
           String[] stringArray0 = new String[1];
-          stringArray0[0] = "j";
+          stringArray0[0] = "-v";
+
           Main main0 = new Main(stringArray0);
           GzipCompressor gzipCompressor0 = new GzipCompressor();
           Pair<String, String> pair0 = Pair.of("1.0.0", "");
           Pair<String, String> pair1 = pair0.swap();
           // Undeclared exception!
-          try { 
+
+          try {
             main0.performEach(gzipCompressor0, pair1);
             fail("Expecting exception: SecurityException");
-          
+
           } catch(SecurityException e) {
              //
              // Security manager blocks (\"java.io.FilePermission\" \"1.0.0\" \"write\")
@@ -221,7 +236,9 @@ public class Main_ESTest extends Main_ESTest_scaffolding {
         } catch(Throwable t) {
             // Need to catch declared exceptions
         }
-      } 
+
+      }
+
     });
     future.get(4000, TimeUnit.MILLISECONDS);
   }
