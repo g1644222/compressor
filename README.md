@@ -17,7 +17,7 @@
 
 ## 使用方法
 プログラムを実行するには、`java`コマンドの`jar`オプションにcompressor-0.1.0.jarを指定してください。  
-* `java -jar compressor-1.0.0.jar [OPTIONS] <FILES...>`
+* `java -jar target/compressor-1.0.0.jar [OPTIONS] <FILES...>`
 ヘルプメッセージは以下の通りです。
 ```sh
 OPTIONS
@@ -28,5 +28,19 @@ OPTIONS
     -h, --help                    print this message.
 ```
 
+## テスト方法
+テストプログラムを動かすにはmavenを使用する。
+
+    * プロジェクト以下のファイルを実行する方法
+        `mvn test`
+
+    * 指定したクラスのみを実行する方法
+        `mvn test -Dtest=[クラス名]`
+        `ex) mvn test -Dtest=Main_ESTest`
+
+    * 指定したテストクラスのメソッドの実行する方法
+        `mvn test -Dtest=[クラス名]#[メソッド名]`
+        `ex) mvn test -Dtest=Main_ESTest#test01`
+    
 <!-- ## アップデート予定
 バージョン表示の実装 -->
