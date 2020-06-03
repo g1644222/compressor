@@ -107,7 +107,6 @@ public class Main_ESTest extends Main_ESTest_scaffolding {
 
   @Test(timeout = 4000)
   public void test04()  throws Throwable  {
-
       try {
         Main.main((String[]) null);
         fail("Expecting exception: NullPointerException");
@@ -132,6 +131,7 @@ public class Main_ESTest extends Main_ESTest_scaffolding {
       try {
         main0 = new Main(stringArray0);
         fail("Expecting exception: Exception");
+
       } catch(Throwable e) {
          //
          // \"-O\" is not a valid option
