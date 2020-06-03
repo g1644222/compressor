@@ -18,7 +18,9 @@ import org.evosuite.runtime.EvoRunnerParameters;
 import org.evosuite.runtime.ViolatedAssumptionAnswer;
 import org.junit.runner.RunWith;
 
+
 @RunWith(EvoRunner.class) @EvoRunnerParameters(mockJVMNonDeterminism = true, useVFS = true, useVNET = true, resetStaticState = true, separateClassLoader = true, useJEE = true)
+
 public class GzipCompressor_ESTest extends GzipCompressor_ESTest_scaffolding {
 
   @Test(timeout = 4000)
@@ -54,6 +56,7 @@ public class GzipCompressor_ESTest extends GzipCompressor_ESTest_scaffolding {
       InputStream inputStream0 = null;
       OutputStream outputStream0 = mock(OutputStream.class, new ViolatedAssumptionAnswer());
       // Undeclared exception!
+
       try {
         gzipCompressor0.compress((InputStream) null, outputStream0);
         fail("Expecting exception: NullPointerException");
