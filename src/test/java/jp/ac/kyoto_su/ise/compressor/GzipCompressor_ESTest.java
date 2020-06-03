@@ -50,6 +50,7 @@ public class GzipCompressor_ESTest extends GzipCompressor_ESTest_scaffolding {
          //
          verifyException("jp.ac.kyoto_su.ise.compressor.Compressor", e);
       }
+
   }
 
   @Test(timeout = 4000)
@@ -70,6 +71,7 @@ public class GzipCompressor_ESTest extends GzipCompressor_ESTest_scaffolding {
          // no message in exception (getMessage() returned null)
          //
          verifyException("org.evosuite.runtime.mock.java.io.MockFileOutputStream", e);
+
       }
   }
 

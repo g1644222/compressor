@@ -13,7 +13,9 @@ import org.evosuite.runtime.EvoRunner;
 import org.evosuite.runtime.EvoRunnerParameters;
 import org.junit.runner.RunWith;
 
+
 @RunWith(EvoRunner.class) @EvoRunnerParameters(mockJVMNonDeterminism = true, useVFS = true, useVNET = true, resetStaticState = true, useJEE = true) 
+
 public class Arguments_ESTest extends Arguments_ESTest_scaffolding {
 
   @Test(timeout = 4000)
@@ -50,9 +52,11 @@ public class Arguments_ESTest extends Arguments_ESTest_scaffolding {
 
   @Test(timeout = 4000)
   public void test02()  throws Throwable  {
+
       // Undeclared exception!
       try { 
         Arguments.parse((String[]) null);
+
         fail("Expecting exception: NullPointerException");
       
       } catch(NullPointerException e) {
@@ -81,6 +85,7 @@ public class Arguments_ESTest extends Arguments_ESTest_scaffolding {
       assertFalse(arguments0.versioninformation());
       assertTrue(boolean0);
       assertFalse(arguments0.deleteOriginal());
+
   }
 
   @Test(timeout = 4000)

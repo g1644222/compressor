@@ -320,7 +320,6 @@ public class Compressor_ESTest extends Compressor_ESTest_scaffolding {
   public void test05()  throws Throwable  {
       BZip2Compressor bZip2Compressor0 = new BZip2Compressor();
       assertNotNull(bZip2Compressor0);
-
       String string0 = null;
       InputStream inputStream0 = mock(InputStream.class, new ViolatedAssumptionAnswer());
       doReturn(0).when(inputStream0).read();
@@ -487,6 +486,7 @@ public class Compressor_ESTest extends Compressor_ESTest_scaffolding {
       try {
         Compressor.compressor((String) null);
         fail("Expecting exception: Exception");
+
 
       } catch(Exception e) {
          //

@@ -70,7 +70,6 @@ public class Main_ESTest extends Main_ESTest_scaffolding {
       try { 
         Main.main(stringArray0);
         fail("Expecting exception: Exception");
-      
       } catch(Exception e) {
          //
          // No such file: {|2gH:BM3~>'f>(:(
@@ -84,7 +83,6 @@ public class Main_ESTest extends Main_ESTest_scaffolding {
       try { 
         Main.main((String[]) null);
         fail("Expecting exception: NullPointerException");
-      
       } catch(NullPointerException e) {
          //
          // args is null
@@ -105,7 +103,6 @@ public class Main_ESTest extends Main_ESTest_scaffolding {
       try {
         main0 = new Main(stringArray0);
         fail("Expecting exception: Exception");
-      
       } catch(Throwable e) {
          //
          // \"-O\" is not a valid option
@@ -120,7 +117,6 @@ public class Main_ESTest extends Main_ESTest_scaffolding {
       try {
         main0 = new Main((String[]) null);
         fail("Expecting exception: NullPointerException");
-      
       } catch(NullPointerException e) {
          //
          // args is null
