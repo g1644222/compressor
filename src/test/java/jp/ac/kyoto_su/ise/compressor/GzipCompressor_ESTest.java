@@ -41,7 +41,7 @@ public class GzipCompressor_ESTest extends GzipCompressor_ESTest_scaffolding {
       try { 
         gzipCompressor0.compress((InputStream) null, mockFileOutputStream0);
         fail("Expecting exception: NullPointerException");
-      
+
       } catch(NullPointerException e) {
          //
          // no message in exception (getMessage() returned null)
