@@ -8,3 +8,6 @@ jdk:
 #   - test
 script: "mvn test"
 script: "mvn install"
+
+after_success:
+  - mvn clean test jacoco:report coveralls:report
