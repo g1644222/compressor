@@ -6,8 +6,9 @@ jdk:
 # branches:
 #   only:
 #   - test
-
+script: "mvn test"
 script: "mvn install"
 
 after_success:
   - mvn cobertura:cobertura coveralls:report
+
