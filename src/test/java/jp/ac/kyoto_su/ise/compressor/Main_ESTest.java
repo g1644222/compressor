@@ -22,6 +22,7 @@ import org.evosuite.runtime.EvoRunner;
 import org.evosuite.runtime.EvoRunnerParameters;
 import org.junit.runner.RunWith;
 
+
 @RunWith(EvoRunner.class) @EvoRunnerParameters(mockJVMNonDeterminism = true, useVFS = true, useVNET = true, resetStaticState = true, useJEE = true)
 public class Main_ESTest extends Main_ESTest_scaffolding {
 
@@ -47,7 +48,7 @@ public class Main_ESTest extends Main_ESTest_scaffolding {
       try {
         main0.performEach(gzipCompressor0, pair1);
         fail("Expecting exception: NullPointerException");
-
+      
       } catch(NullPointerException e) {
          //
          // no message in exception (getMessage() returned null)
@@ -80,6 +81,7 @@ public class Main_ESTest extends Main_ESTest_scaffolding {
 
   @Test(timeout = 4000)
   public void test03()  throws Throwable  {
+
       try {
         Main.main((String[]) null);
         fail("Expecting exception: NullPointerException");
@@ -146,7 +148,7 @@ public class Main_ESTest extends Main_ESTest_scaffolding {
       try {
         main0.perform((Arguments) null);
         fail("Expecting exception: NullPointerException");
-
+      
       } catch(NullPointerException e) {
          //
          // no message in exception (getMessage() returned null)
@@ -157,6 +159,7 @@ public class Main_ESTest extends Main_ESTest_scaffolding {
 
   @Test(timeout = 4000)
   public void test08()  throws Throwable  {
+
     Future<?> future = executor.submit(new Runnable(){
             @Override public void run() {
         try {
@@ -168,7 +171,7 @@ public class Main_ESTest extends Main_ESTest_scaffolding {
           try {
             main0.performEach((Compressor) null, pair0);
             fail("Expecting exception: SecurityException");
-
+          
           } catch(SecurityException e) {
              //
              // Security manager blocks (\"java.io.FilePermission\" \"\" \"write\")
@@ -214,6 +217,7 @@ public class Main_ESTest extends Main_ESTest_scaffolding {
       Main main0 = new Main(stringArray0);
       BZip2Compressor bZip2Compressor0 = new BZip2Compressor();
       // Undeclared exception!
+
       try {
         main0.performEach(bZip2Compressor0, (Pair<String, String>) null);
         fail("Expecting exception: NullPointerException");
