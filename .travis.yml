@@ -6,5 +6,5 @@ jdk:
 # branches:
 #   only:
 #   - test
-
+script: "mvn test"
 script: "mvn install"
