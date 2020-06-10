@@ -1,5 +1,6 @@
 ![Hex.pm](https://img.shields.io/hexpm/l/Apa)
 [![Build Status](https://travis-ci.com/g1644222/compressor.svg?token=xdZ1c89i5sEL5QfrybCz&branch=master)](https://travis-ci.com/g1644222/compressor)
+[![Coverage Status](https://coveralls.io/repos/github/g1644222/compressor/badge.svg?branch=master)](https://coveralls.io/github/g1644222/compressor?branch=master)
 
 # compressor
 エンピリカルソフトウェア工学のソースコード  
@@ -41,6 +42,6 @@ OPTIONS
     * 指定したテストクラスのメソッドの実行する方法
         `mvn test -Dtest=[クラス名]#[メソッド名]`
         `ex) mvn test -Dtest=Main_ESTest#test01`
-    
+
 <!-- ## アップデート予定
 バージョン表示の実装 -->
