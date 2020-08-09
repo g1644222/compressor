@@ -9,6 +9,9 @@ import java.util.function.BiPredicate;
 import java.util.function.Function;
 
 public class Pair<L, R> {
+  /**
+  *圧縮するファイルの入力と出力をマップで保存するためのクラス。
+  */
     private L left;
     private R right;
 

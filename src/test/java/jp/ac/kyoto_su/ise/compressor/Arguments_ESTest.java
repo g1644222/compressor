@@ -14,7 +14,7 @@ import org.evosuite.runtime.EvoRunnerParameters;
 import org.junit.runner.RunWith;
 
 
-@RunWith(EvoRunner.class) @EvoRunnerParameters(mockJVMNonDeterminism = true, useVFS = true, useVNET = true, resetStaticState = true, useJEE = true) 
+@RunWith(EvoRunner.class) @EvoRunnerParameters(mockJVMNonDeterminism = true, useVFS = true, useVNET = true, resetStaticState = true, useJEE = true)
 
 public class Arguments_ESTest extends Arguments_ESTest_scaffolding {
 
@@ -38,10 +38,10 @@ public class Arguments_ESTest extends Arguments_ESTest_scaffolding {
       stringArray0[6] = "jp.ac.kyoto_su.ise.compressor.Arguments";
       stringArray0[7] = "sv)Bg";
       stringArray0[8] = "&(Aq'dNa5@ij)Y";
-      try { 
+      try {
         Arguments.parse(stringArray0);
         fail("Expecting exception: Exception");
-      
+
       } catch(Exception e) {
          //
          // \"-#7\" is not a valid option
@@ -54,11 +54,11 @@ public class Arguments_ESTest extends Arguments_ESTest_scaffolding {
   public void test02()  throws Throwable  {
 
       // Undeclared exception!
-      try { 
+      try {
         Arguments.parse((String[]) null);
 
         fail("Expecting exception: NullPointerException");
-      
+
       } catch(NullPointerException e) {
          //
          // args is null
@@ -92,10 +92,10 @@ public class Arguments_ESTest extends Arguments_ESTest_scaffolding {
   public void test05()  throws Throwable  {
       String[] stringArray0 = new String[1];
       // Undeclared exception!
-      try { 
+      try {
         Arguments.parse(stringArray0);
         fail("Expecting exception: NullPointerException");
-      
+
       } catch(NullPointerException e) {
          //
          // no message in exception (getMessage() returned null)
@@ -107,7 +107,7 @@ public class Arguments_ESTest extends Arguments_ESTest_scaffolding {
   @Test(timeout = 4000)
   public void test06()  throws Throwable  {
       String string0 = Arguments.version();
-      assertEquals("1.0.0", string0);
+      assertEquals("1.2.0", string0);
   }
 
   @Test(timeout = 4000)

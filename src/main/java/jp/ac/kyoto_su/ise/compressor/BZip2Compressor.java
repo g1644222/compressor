@@ -7,6 +7,9 @@ import java.io.OutputStream;
 import org.apache.commons.compress.compressors.bzip2.BZip2CompressorOutputStream;
 
 public class BZip2Compressor implements Compressor {
+  /**
+  *bzip圧縮を実行するクラス。
+  */
     @Override
     public void compress(InputStream in, OutputStream out) throws IOException {
         BZip2CompressorOutputStream bzip2Out = new BZip2CompressorOutputStream(out);

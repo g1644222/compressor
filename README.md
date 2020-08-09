@@ -18,13 +18,13 @@
     * `mvn install`
 
 ## 使用方法
-プログラムを実行するには、`java`コマンドの`jar`オプションにcompressor-0.1.0.jarを指定してください。  
-* `java -jar target/compressor-1.0.0.jar [OPTIONS] <FILES...>`
+プログラムを実行するには、`java`コマンドの`jar`オプションにcompressor-1.2.0.jarを指定してください。  
+* `java -jar target/compressor-1.2.0.jar [OPTIONS] <FILES...>`
 ヘルプメッセージは以下の通りです。
 ```sh
 OPTIONS
     -c, --compress <ALGORITHM>    specifies compress algorithm. Default is `gzip`.
-                                  Available: gzip, and bzip2
+                                  Available: gzip, and bzip2, zlib
     -d, --delete-original         Delete original files after compression.
     -v, --version                 print version.
     -h, --help                    print this message.

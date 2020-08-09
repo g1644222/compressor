@@ -6,6 +6,9 @@ import java.io.OutputStream;
 import java.util.zip.GZIPOutputStream;
 
 public class GzipCompressor implements Compressor {
+  /**
+  * gzipを使った圧縮をするクラス
+  */
     @Override
     public void compress(InputStream in, OutputStream out) throws IOException {
         GZIPOutputStream gzipOut = new GZIPOutputStream(out);
