@@ -51,7 +51,7 @@ public class ZlibCompressor_ESTest extends ZlibCompressor_ESTest_scaffolding {
   public void test2()  throws Throwable  {
       ZlibCompressor ZlibCompressor0 = new ZlibCompressor();
       String string0 = ZlibCompressor0.renameFile("");
-      assertEquals(".bz2", string0);
+      assertEquals(".zlib", string0);
   }
 
   @Test(timeout = 4000)
