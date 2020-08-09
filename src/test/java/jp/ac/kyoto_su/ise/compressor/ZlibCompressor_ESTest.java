@@ -54,13 +54,4 @@ public class ZlibCompressor_ESTest extends ZlibCompressor_ESTest_scaffolding {
       assertEquals(".zlib", string0);
   }
 
-  @Test(timeout = 4000)
-  public void test3()  throws Throwable  {
-      ZlibCompressor ZlibCompressor0 = new ZlibCompressor();
-      InputStream inputStream0 = mock(InputStream.class, new ViolatedAssumptionAnswer());
-      doReturn(0, 0, 0, 0, 0).when(inputStream0).read();
-      OutputStream outputStream0 = mock(OutputStream.class, new ViolatedAssumptionAnswer());
-      // Undeclared exception!
-      ZlibCompressor0.compress(inputStream0, outputStream0);
-  }
 }
